@@ -1,0 +1,179 @@
+<!-- Developed by techygamerkid (Isaac Hatfield) -->
+<Developed by techygamerkid (Isaac Hatfield)>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Circuit Breakers</title>
+</head>
+<body>
+<style>
+p {
+  font-family: Roboto, Helvetica;
+  font-size: 120%;
+}
+h1 {
+  font-family: Roboto, Helvetica;
+}
+h2 {
+  font-family: Roboto, Helvetica;
+  font-size: 150%;
+}
+quote {
+  font-family: Roboto, Helvetica;
+  font-style: italic;
+  font-size: 300%;
+}
+body {
+	background-color: #73a9ff;
+}
+small {
+  font-family: Roboto, Helvetica;
+  font-size: 75%;
+}
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+/* Style the header */
+.header {
+  opacity: 0.7;
+  filter: alpha(opacity=70); /* For IE8 and earlier */
+  padding: 10px 16px;
+  background: #FFFFFF;
+  color: #FFFFFF;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+div.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+</style>
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+<div class="header" id="myHeader">
+<center><h1><img src="logo.png" alt="Circuit Breakers" height="66.53" width="187.06"></h1></center>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<center><p>To sign up, click the black icon on the taskbar! Also, contact us at email!</p></center>
+<div class="content">
+<blue><p><center><img src="logo.png" alt="First Logo" style="width:50%;height:50%;"></center></p></blue>
+<center><h1>Our Team (Circuit Breakers)</h1></center>
+<p>The Circuit Breakers is our outreaching robotics team enrolled in FIRST and hoping to educate and involve students with job skills to be an engineer, a scientist, or even a programmer. We expand our team to help bring students together and give them an experience that teaches them at FTC middle school level along with the FIRST program that ranges from 6 year olds building LEGO's to adults at mentor level. We hope to make the world fun and awesome with robots!</p>
+<p><center><img src="firstlogo.jpg" alt="First Logo" style="width:479.5px;height:360px;"></center></p>
+<center><h1>FIRST</h1></center>
+<p>FIRST is a STEM curriculum designed to teach young kids more about science, technology, engineering, and math (hence, the acronym STEM) that has programs from 1-2 grade, Junior FLL which is a program about building a certain specified object using LEGO™ bricks. The next program they have is 3-5 grade, where you step into FLL and build LEGO MINDSTORMS™, robots that do what you program and build them to do as a team, to compete in district championships and move up into state level, and even world level. Middle school brings students FTC, where we come in. We are an FTC team, but whats FTC? FTC is the next level which moves into TETRIX parts to build and structure and uses more advanced technologies like expansion hubs and smart phones. You start using motors and incorporate high level math into the process. Programming gets complex, using Java (the programming language that Minecraft was built on) and then you can inject what you wrote into an Android phone that connects via WiFi Direct to a phone with a controller attached so you can tap into your robot and play it like a video game. Once you move into high school, everything is full blast. Robots are connected to laptops with full routers and machine-level motors can be used. Batterys are also insane and the community is amazing. One last thing to mention is that you have to design your robot around different games that are revealed each year and you have limited time to do so.</p>
+<center><h1>Competition</h1></center>
+<p>Get out of town! Once the building seasons over you participate in competitions around your area and move on to the next ones! You start by bringing your robot and the necessary tools you might want as troubleshooting may be way more common then you think. You start by going to your "pit" table area, then delivering a judges presentation to higher your chance of receiving awards, and once the beginning ceremonies are over, they will start qualifier matches to see if you can pick for the final rounds. You get a sheet telling you when to play and they announce a bit earlier when to start taking your robots to the area where you wait to set them up in the next rounds. 2 teams play on one "alliance" to work together against another alliance, while every round the selection is random, and if you beat them in points you can get leaderboard points to rank up. Once the qualifier matches are over, you go into selection where the top teams pick other teams to be on their alliance (one that stays with them the rest of the games) and you have best out of three wins to advance from your finals. (quarter, semi, finals) If you win, you are instantly qualified for the next type of championship. (states, worlds) Only two district championships count towards qualifying to advance, while states, and worlds are one-time opportunities until the next season.
+<center><h1>Why you should join!</h1></center>
+<p>FIRST Robotics is a great program to help kids evolve in learning and create possible job opportunities to become engineers, IT pros, or programmers. It teaches core subjects like math and science in a fun way! It is beneficial to you (Or as a parent, your kid) and also will be a team-bonding, community experience. It also has 10,000's of teams with over 30 of them being in Troy! Plus, it's not very complicated to start your own! We especially like parents being involved too on our team or other teams along with interest from the kids as it make teams better and active with a fun experience for all. It's a very diverse community and we look forward to seeing you on a team! If you would like to join a team, or join ours, please click on the black and white square icon put on the taskbar, to submit your information, so we can contact you, or contact us at.</p>
+<center><quote>"It's the hardest fun you'll ever have!"<quote></center>
+<center><p>For more information, check firstinspires.org</p></center>
+<center><small>Website built by techygamerkid (Isaac Hatfield)</small></center>
+</div>
+</body>
+</html>

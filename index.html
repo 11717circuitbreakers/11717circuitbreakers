@@ -1,6 +1,6 @@
 <!-- Developed by techygamerkid (Isaac Hatfield) -->
-<Developed by techygamerkid (Isaac Hatfield)>
 <!DOCTYPE html>
+<techygamerkid>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1" /> 
@@ -8,6 +8,31 @@
 <link rel="stylesheet" type="text/css" href="styles.css"></link>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300&display=swap" rel="stylesheet"></link>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+function themeLight() {
+  document.cookie = "theme=Light; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+  console.log("Set the theme to Light");
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #3492eb}');
+  style.sheet.insertRule('.header {background-color: #FFFFFF}');
+  style.sheet.insertRule('p {color: #FFFFFF}');
+  style.sheet.insertRule('h1 {color: #FFFFFF}');
+  style.sheet.insertRule('h2 {color: #FFFFFF}');
+}
+function themeDark() {
+  document.cookie = "theme=Dark; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+  console.log("Set the theme to Dark");
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #000000}');
+  style.sheet.insertRule('div.header {background-color: #000000}');
+  style.sheet.insertRule('p {color: lightgreen}');
+  style.sheet.insertRule('h1 {color: lightgreen}');
+  style.sheet.insertRule('h2 {color: lightgreen}');
+}
+</script>
+<script src="darkmode.js"></script>
 </head>
 <body>
 <div class="header" id="myHeader">
@@ -38,6 +63,7 @@ Instagram
 |
 YouTube
 </p>
+<p><a href="javascript:void(0);" onclick="themeLight()">Light</a> | <a onclick="themeDark()" href="javascript:void(0);">Dark</a></p>
 <img src="logo.png" alt="First Logo" style="width:75%;">
 <h1>Our Team (Circuit Breakers)</h1>
 <p>The Circuit Breakers is our outreaching robotics team enrolled in FIRST and hoping to educate and involve students with job skills to be an engineer, a scientist, or even a programmer. We expand our team to help bring students together and give them an experience that teaches them at FTC middle school level along with the FIRST program that ranges from 6 year olds building LEGO's to adults at mentor level. We hope to make the world fun and awesome with robots!</p>
@@ -54,3 +80,4 @@ YouTube
 </center>
 </body>
 </html>
+</techygamerkid>

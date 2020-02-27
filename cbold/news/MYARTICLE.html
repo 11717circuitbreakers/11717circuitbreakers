@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!--HEY!!! Read this-->
+<!--Make sure to replace photos in "img" elements with your picture address, type the folder it's in, and add the extension of it (.jpg, .png) (Ex: images/CompanyLogo.jpg)-->
+<!--Delete items you don't want which should be covered by notes like this-->
+<!--Copy and paste items with their two note tags and pay close attention-->
+<!--p indicates paragraph text, h1 indicates a header label (change it to h2 if you need something smaller), img indicates image, and a indicates link-->
+<!--You can change the names of pages, but make sure that you change it in all required documents and that you cannot change the name of index.html-->
+<!--If you change colors in style.css, be sure to change them in the Dark Mode script below too!-->
+<!--Make sure you have extensions in links to local documents/pictures/scripts/styles-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css"/>
+<title>Your Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+if (document.cookie == "theme=Dark") {
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #242424}');
+  style.sheet.insertRule('.header {background-color: #242424}');
+  style.sheet.insertRule('p {color: #FFFFFF}');
+  style.sheet.insertRule('h1 {color: #FFFFFF}');
+  style.sheet.insertRule('h2 {color: #FFFFFF}');
+  style.sheet.insertRule('.content {background: #242424}');
+  style.sheet.insertRule('.content {color: #FFFFFF}');
+  style.sheet.insertRule('.tabs {color: #FFFFFF}');
+}
+if (document.cookie == "theme=Light") {
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #242424}');
+  style.sheet.insertRule('.header {background-color: #FFFFFF}');
+  style.sheet.insertRule('p {color: #000000}');
+  style.sheet.insertRule('h1 {color: #000000}');
+  style.sheet.insertRule('h2 {color: #000000}');
+  style.sheet.insertRule('.content {background: #FFFFFF}');
+  style.sheet.insertRule('.content {color: #000000}');
+  style.sheet.insertRule('.tabs {color: #000000}');
+}
+function themeLight() {
+  document.cookie = "theme=Light; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+  console.log("Set the theme to Light");
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #242424}');
+  style.sheet.insertRule('.header {background-color: #FFFFFF}');
+  style.sheet.insertRule('p {color: #000000}');
+  style.sheet.insertRule('h1 {color: #000000}');
+  style.sheet.insertRule('h2 {color: #000000}');
+  style.sheet.insertRule('.content {background: #FFFFFF}');
+  style.sheet.insertRule('.content {color: #000000}');
+  style.sheet.insertRule('.tabs {color: #000000}');
+}
+function themeDark() {
+  document.cookie = "theme=Dark; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+  console.log("Set the theme to Dark");
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('body {background-color: #242424}');
+  style.sheet.insertRule('.header {background-color: #242424}');
+  style.sheet.insertRule('p {color: #FFFFFF}');
+  style.sheet.insertRule('h1 {color: #FFFFFF}');
+  style.sheet.insertRule('h2 {color: #FFFFFF}');
+  style.sheet.insertRule('.content {background: #242424}');
+  style.sheet.insertRule('.content {color: #FFFFFF}');
+  style.sheet.insertRule('.tabs {color: #FFFFFF}');
+}
+function more() {
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('.extrapage {display:inline}');
+  style.sheet.insertRule('#more {display:none}');
+  style.sheet.insertRule('#less {display:inline}');
+}
+function less() {
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('.extrapage {display:none}');
+  style.sheet.insertRule('#less {display:none}');
+  style.sheet.insertRule('#more {display:inline}');
+}
+</script>
+</head>
+<body>
+<!--Header-->
+<div class="header">
+<p>
+<a href="./index.html"><img style="float:left;padding-left:1%;" src="./images/logo.png" id="logo" alt="My Page"/></a>
+<div class="tabs" style="float:right;padding-right:1%;">
+<!--Edit these to match your pages!-->
+<a href="YOURPAGE1.html">Robot</a>
+|
+<a href="YOURPAGE5.html">Files</a>
+|
+<a href="YOURPAGE6.html">News</a>
+<span class="extrapage">|</span>
+<a href="YOURPAGE2.html" class="extrapage">Team</a>
+<span class="extrapage">|</span>
+<a href="YOURPAGE3.html" class="extrapage">Community</a>
+<span class="extrapage">|</span>
+<a href="YOURPAGE4.html" class="extrapage">Business</a>
+|
+<a id="more" href="javascript:more()">More</a>
+<a id="less" href="javascript:less()">Less</a>
+</div>
+<br>
+<br>
+</p>
+</div>
+<!--Header-->
+<br>
+<br>
+<br>
+<div class="background">
+<br>
+<br>
+<div class="content" style="padding-left:2.5%;padding-right:2.5%;margin:auto;text-align:center;">
+<br>
+<!--Content-->
+<!--Picture-->
+<img src=".JPG" alt="My Picture" width="50%"/>
+<!--Picture-->
+<h6 style="text-align:left;">January 4, 2020 | Isaac Hatfield</h6>
+<!--Left aligned header and paragraph-->
+<h1 style="text-align:left;">Lorem ipsum dolor.</h1>
+<p style="text-align:left;">Welcome</p>
+<!--Left aligned header and paragraph-->
+<p style="text-align:left;">Welcome</p>
+<br>
+<br>
+</div>
+<br>
+</div>
+<!--Footer-->
+<footer>
+<p style="align:left;width:100%;line-height:200px;display:inline;padding:5%5%5%5%;color:white;">
+<a href="https://www.google.com">Link 1</a>
+|
+<a href="https://www.google.com">Link 2</a>
+|
+<a href="https://www.google.com">Link 3</a>
+<img src="./images/logo.png" id="footlogo" style="display:inline;padding-right;2.5%;padding-top:2.5%" align="right" alt="logo"/>
+</p>
+</footer>
+<!--Footer-->
+<!--Content-->
+</body>
+</html>

@@ -5,12 +5,9 @@ body {
 	margin: 0;
 	padding: 0;
 	/* Changes background, but its unseeable unless you change ".background" in style.css */
-	background: #242424;
-	width: 100%;
-    height: 100vh;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     background-size: 400% 400%;
-
+	position: relative;
 	animation: change 10s ease-in-out infinite;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -78,7 +75,7 @@ footer {
 	background:white;
 }
 #logo {
-	width: 2.3%
+	width: 2.3%;
 }
 #footlogo {
 	width: 5%

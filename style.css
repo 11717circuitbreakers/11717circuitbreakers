@@ -128,3 +128,8 @@ iframe {
 .extrapage {
 	display:none;
 }
+.background {
+	width:100%;
+    background-repeat: no-repeat; /* Do not repeat the image */
+	background-attachment:fixed;
+}

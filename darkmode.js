@@ -71,8 +71,16 @@ function less() {
   style.sheet.insertRule('#more {display:inline}');
 }
 if (document.cookie == "menu=more") {
-  more()
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('.extrapage {display:inline}');
+  style.sheet.insertRule('#more {display:none}');
+  style.sheet.insertRule('#less {display:inline}');
 }
 if (document.cookie == "menu=less") {
-  less()
+  var style = document.createElement('style');
+  document.head.appendChild(style);
+  style.sheet.insertRule('.extrapage {display:none}');
+  style.sheet.insertRule('#less {display:none}');
+  style.sheet.insertRule('#more {display:inline}');
 }

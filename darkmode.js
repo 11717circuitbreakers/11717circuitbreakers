@@ -1,4 +1,3 @@
-console.log("Yoshiplex was here");
 if (document.cookie == "theme=Dark") {
   var style = document.createElement('style');
   document.head.appendChild(style);
@@ -69,3 +68,4 @@ function less() {
   style.sheet.insertRule('#less {display:none}');
   style.sheet.insertRule('#more {display:inline}');
 }
+console.log("Yoshiplex was here");

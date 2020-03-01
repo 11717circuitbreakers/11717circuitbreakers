@@ -9,7 +9,6 @@ if (document.cookie == "theme=Dark") {
   style.sheet.insertRule('.content {background: #242424}');
   style.sheet.insertRule('.content {color: #FFFFFF}');
   style.sheet.insertRule('.tabs {color: #FFFFFF}');
-  style.sheet.insertRule('#logo {filter: invert(100%);}');
 }
 if (document.cookie == "theme=Light") {
   var style = document.createElement('style');
@@ -22,7 +21,6 @@ if (document.cookie == "theme=Light") {
   style.sheet.insertRule('.content {background: #FFFFFF}');
   style.sheet.insertRule('.content {color: #000000}');
   style.sheet.insertRule('.tabs {color: #000000}');
-  style.sheet.insertRule('#logo {filter: invert(0%);}');
 }
 function themeLight() {
   document.cookie = "theme=Light; expires=Fri, 31 Dec 9999 23:59:59 GMT";
@@ -37,7 +35,6 @@ function themeLight() {
   style.sheet.insertRule('.content {background: #FFFFFF}');
   style.sheet.insertRule('.content {color: #000000}');
   style.sheet.insertRule('.tabs {color: #000000}');
-  style.sheet.insertRule('#logo {filter: invert(0%);}');
 }
 function themeDark() {
   document.cookie = "theme=Dark; expires=Fri, 31 Dec 9999 23:59:59 GMT";
@@ -52,7 +49,6 @@ function themeDark() {
   style.sheet.insertRule('.content {background: #242424}');
   style.sheet.insertRule('.content {color: #FFFFFF}');
   style.sheet.insertRule('.tabs {color: #FFFFFF}');
-  style.sheet.insertRule('#logo {filter: invert(100%);}');
 }
 function more() {
   var style = document.createElement('style');

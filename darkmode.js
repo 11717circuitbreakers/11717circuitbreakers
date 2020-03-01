@@ -1,3 +1,4 @@
+console.log("Yoshiplex was here");
 if (document.cookie == "theme=Dark") {
   var style = document.createElement('style');
   document.head.appendChild(style);

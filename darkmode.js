@@ -55,7 +55,6 @@ function themeDark() {
   style.sheet.insertRule('#logo {filter: invert(100%);}');
 }
 function more() {
-  document.cookie = "menu=more; expires=Fri, 31 Dec 9999 23:59:59 GMT";
   var style = document.createElement('style');
   document.head.appendChild(style);
   style.sheet.insertRule('.extrapage {display:inline}');
@@ -63,21 +62,6 @@ function more() {
   style.sheet.insertRule('#less {display:inline}');
 }
 function less() {
-  document.cookie = "menu=less; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-  var style = document.createElement('style');
-  document.head.appendChild(style);
-  style.sheet.insertRule('.extrapage {display:none}');
-  style.sheet.insertRule('#less {display:none}');
-  style.sheet.insertRule('#more {display:inline}');
-}
-if (document.cookie == "menu=more") {
-  var style = document.createElement('style');
-  document.head.appendChild(style);
-  style.sheet.insertRule('.extrapage {display:inline}');
-  style.sheet.insertRule('#more {display:none}');
-  style.sheet.insertRule('#less {display:inline}');
-}
-if (document.cookie == "menu=less") {
   var style = document.createElement('style');
   document.head.appendChild(style);
   style.sheet.insertRule('.extrapage {display:none}');

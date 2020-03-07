@@ -5,7 +5,7 @@ body {
 	margin: 0;
 	padding: 0;
 	/* Changes background, but its unseeable unless you change ".background" in style.css */
-    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background: linear-gradient(-45deg, #000f0a, #007d55, #00a11d, #00ffaa);
     background-size: 400% 400%;
 	position: relative;
 	animation: change 10s ease-in-out infinite;
@@ -71,7 +71,7 @@ footer {
 	color: #000000;
 }
 .content {
-	width:50%;
+	width:65%;
 	background:white;
 }
 #logo {
@@ -101,7 +101,8 @@ iframe {
 		font-size: 14px;
 	}
 	#logo {
-		width: 8%
+		width: 35%;
+		float: center !important;
 	}
 	img {
 		width: 80%
@@ -129,4 +130,14 @@ iframe {
 	width:100%;
     background-repeat: no-repeat; /* Do not repeat the image */
 	background-attachment:fixed;
+}
+@media (prefers-color-scheme: dark) {
+	body {background-color: #242424}
+	.header {background-color: #242424}
+	p {color: #FFFFFF}
+	h1 {color: #FFFFFF}
+	h2 {color: #FFFFFF}
+	.content {background: #242424}
+	.content {color: #FFFFFF}
+	.tabs {color: #FFFFFF}
 }
